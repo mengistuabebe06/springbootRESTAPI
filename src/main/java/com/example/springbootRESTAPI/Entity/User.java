@@ -11,11 +11,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-//@Data
-//@Getter
-//@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name="user")
 public class User {
@@ -32,7 +27,6 @@ public class User {
 	}
 
 	public User(String firstname, String lastname) {
-		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 	}
