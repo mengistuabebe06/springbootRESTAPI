@@ -5,7 +5,7 @@ import com.example.springbootRESTAPI.Entity.User;
 
 public interface UserService {
 	
-	public void registerUser(User user);
+	public User registerUser(User user);
 	
 	public int add(Operation operation);
 	public int sub(Operation operation);

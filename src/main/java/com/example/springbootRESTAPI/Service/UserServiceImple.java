@@ -14,9 +14,9 @@ public class UserServiceImple implements UserService{
 	private UserRepostory userRepo;
 	
 	@Override
-	public void registerUser(User user) {
+	public User registerUser(User user) {
 		
-		userRepo.save(user);
+		return userRepo.save(user);
 	}
 	
 	//calculator 
@@ -43,7 +43,7 @@ public class UserServiceImple implements UserService{
 	public int div(Operation opeModel) {
 		// TODO Auto-generated method stub
 		if (opeModel.getNum2() == 0) {
-			return -1;
+			return 0;
 		}
 		return opeModel.getNum1() / opeModel.getNum2();
 	}
